@@ -1,0 +1,100 @@
+"""
+Hi everyone this is the pythonic moatlang
+"""
+
+metric1 = 2
+
+metric2 = 2.4
+
+metric3 = "hello world"
+
+print(metric1)
+
+print(metric2)
+
+print(metric3)
+
+
+metric4 = metric1 * 2
+
+print(metric4)
+
+metric5 = metric4 + 2.4
+
+print(metric5)
+
+metric6 = (metric4 + 2.4)/metric2
+
+print(metric6)
+
+
+# supports negative numbers
+metric7 = -10 + metric6
+print(metric7)
+
+if 2==2: {
+    print("2 is equal to 2")
+    print("we just used if statement")
+}
+
+
+if metric1==3: {
+    print("x")
+}
+elif 3==3: {
+    print("3 is = 3")
+}
+else: {
+    print("else")
+}
+
+
+if metric1==3: {
+    print("x")
+}
+elif 3==2: {
+    print("x")
+}
+elif 5==5: {
+    print("5 is = 5")
+}
+else: {
+    print("else")
+}
+
+
+if 2==3: {
+    print("x")
+}
+elif 3==2: {
+    print("3 is = 3")
+}
+else: {
+    print("Nothing satisfies me")
+}
+
+
+
+metr_list4 = [1,2,3]
+
+print(metr_list4)
+
+print(["hi",1, 4])
+
+print(["hi",[1,3,4], 4])
+
+# nested lists
+nest_list = ["hi",[1,3,4], 4]
+
+
+# nested functions
+print(str(1))
+
+# nested hashmaps support
+metrics_dict = {"a":1, "b":2}
+
+print(metrics_dict)
+
+metrics_dict2 = {"a":[1,3,2], "b":2.5}
+
+print(metrics_dict2)

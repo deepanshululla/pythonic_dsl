@@ -1,0 +1,28 @@
+variable = 5
+
+more_complex_var = 2
+print(1)
+print(1.2)
+
+double_var = 2.4
+
+print (variable)
+madeUpFunction(more_complex_var)
+
+# some comments
+
+simple_var = 2
+
+double_var = 2.4
+
+string_var = "hello world"
+
+print(simple_var)
+
+print(double_var)
+
+print(string_var)
+
+var3 = 2+2
+
+print(var3)

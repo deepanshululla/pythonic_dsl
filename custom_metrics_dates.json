@@ -1,0 +1,253 @@
+{
+  "custom_metrics_dates": {
+    "viewability_diagnostics": {
+      "general": "2014-02-28",
+      "custom": {
+        "TURNER": "2014-02-26",
+        "ADAGEHOUSE2": "2014-03-26"
+      }
+    },
+    "viewability_diagnostics_future": {
+      "general": "2015-10-09",
+      "custom": {
+        "ADTECHBRANDS1": false,
+        "ADTECHSITES1": false
+      }
+    },
+    "video_sizes": {
+      "general": "2014-03-29",
+      "custom": {}
+    },
+    "content_medians": {
+      "general": "2014-05-08",
+      "custom": {}
+    },
+    "in_view_time_buckets": {
+      "general": "2013-07-12",
+      "custom": {}
+    },
+    "nht_metrics": {
+      "general": "2015-01-10",
+      "custom": {
+        "PL_AOLCONTENT2": "2015-03-17"
+      }
+    },
+    "nht_metrics_vol_2": {
+      "general": "2015-02-26",
+      "custom": {
+        "PL_AOLCONTENT2": "2015-03-17"
+      }
+    },
+    "nht_metrics_may": {
+      "general": "2015-05-15",
+      "custom": {}
+    },
+    "nht_metrics_avoc": {
+      "general": "2015-07-15",
+      "custom": {}
+    },
+    "nht_metrics_hv": {
+      "general": "2015-08-25",
+      "custom": {}
+    },
+    "nht_metrics_15cap": {
+      "general": "2015-09-02",
+      "custom": {}
+    },
+    "nht_metrics_la": {
+      "general": "2015-10-15",
+      "custom": {}
+    },
+    "nht_metrics_gm": {
+      "general": "2018-02-21",
+      "custom": {}
+    },
+    "ivt_metrics": {
+      "general": "2016-03-09",
+      "custom": {}
+    },
+    "on_screen_metrics": {
+      "general": "2015-11-25",
+      "custom": {}
+    },
+    "dentsu_metrics": {
+      "general": "2016-02-04",
+      "custom": {}
+    },
+    "chartbeat_metrics": {
+      "general": "2016-02-13",
+      "custom": {
+        "PGATOUR": "2016-03-09",
+        "INFORMAADSPEED": "2016-03-09",
+        "INFORMAOAS": "2016-03-09"
+      }
+    },
+    "video_aud_view_measurable": {
+      "general": "2014-10-11",
+      "custom": {
+        "BROLLNETWORK1": "2014-10-02",
+        "VID_MECGLOBALVPAID1": "2014-10-02",
+        "VID_MECGLOBALUSVPAID1": "2014-10-02",
+        "VID_UNDERTONEVPAID2": "2014-10-02",
+        "VID_GROUPMVPAID1": "2014-10-02",
+        "VID_TRADEDESKVIDEO1": "2014-10-02",
+        "VID_TRADEDESKVPAID1": "2014-10-02",
+        "MECGLOBAL1": "2014-10-02",
+        "MAXUS1": "2014-10-02",
+        "MECGLOBALSIZMEK2": "2014-10-02",
+        "MECGLOBALUSDFA1": "2014-10-02",
+        "MEDIACOM1": "2014-10-02",
+        "GROUPM2": "2014-10-02",
+        "UNDERTONEPX1": "2014-10-02",
+        "UNDERTONE3": "2014-10-02",
+        "UNDERTONE3G": "2014-10-02",
+        "343": "2014-10-02",
+        "TRADEDESK1": "2014-10-02",
+        "TRADEDESKV2": "2014-10-02"
+      }
+    },
+    "content_page_scroll_depth": {
+      "general": "2014-11-22",
+      "custom": {}
+    },
+    "grapeshot_metrics": {
+      "general": "2015-05-13",
+      "custom": {}
+    },
+    "groupm_metrics": {
+      "general": "2017-11-18",
+      "custom": {}
+    },
+    "groupm_mrc2": {
+      "general": "2018-01-19",
+      "custom": {
+        "VID_FB_VIDEO_1": "2018-04-19",
+        "VID_FB_VIDEO_INVIEW3": "2018-04-19",
+        "VID_FB_VIDEO_INVIEW10": "2018-04-19",
+        "VID_IG_VIDEO_1": "2018-09-11",
+        "VID_IG_VIDEO_INVIEW3": "2018-09-11",
+        "VID_IG_VIDEO_INVIEW10": "2018-09-11"
+      }
+    },
+    "gv_sensitive": {
+      "general": "2016-03-23",
+      "custom": {}
+    },
+    "mrc_in_app_metrics": {
+      "general": "2015-07-18",
+      "custom": {}
+    },
+    "video_duration_in_view_change": {
+      "general": "2015-10-01",
+      "custom": {}
+    },
+    "video_ots_change": {
+      "general": "2015-01-03",
+      "custom": {}
+    },
+    "ad_block": {
+      "general": "2016-03-09",
+      "custom": {}
+    },
+    "ivt_abf": {
+      "general": "2016-05-05",
+      "custom": {}
+    },
+    "ivt_bad_domain": {
+      "general": "2016-09-28",
+      "custom": {}
+    },
+    "custom_inview_metrics": {
+      "general": "2016-04-06",
+      "custom": {}
+    },
+    "unilever_fully_onscreen_metrics": {
+      "general": "2016-07-07",
+      "custom": {
+        "VID_EYVPAIDWRAPPER3": "2016-08-08"
+      }
+    },
+    "load_opportunities": {
+      "general": "2013-01-01",
+      "custom": {
+        "UNRULYMEDIADISPLAY1A": "2016-06-10"
+      }
+    },
+    "hidden_ad_metrics_legacy": {
+      "general": "2017-09-14",
+      "custom": {}
+    },
+    "hidden_ad_metrics": {
+      "general": "2017-12-15",
+      "custom": {}
+    },
+    "real_estate_metrics": {
+      "general": "2017-02-10",
+      "custom": {
+        "VID_SNAPCHAT_VIDEO_1": "2016-11-17",
+        "VID_SNAPCHAT_VIDEO_2": "2016-11-17"
+      }
+    },
+    "throttling_metrics": {
+      "general": "2017-08-01",
+      "custom": {}
+    },
+    "yt_trueview_metrics": {
+      "general": "2017-02-20",
+      "custom": {}
+    },
+    "pmx_metrics": {
+      "general": "2017-09-01",
+      "custom": {}
+    },
+    "fb_groupm_metrics": {
+      "general": "2018-04-19",
+        "custom": {
+          "VID_IG_VIDEO_1": "2018-09-11",
+          "VID_IG_VIDEO_INVIEW3": "2018-09-11",
+          "VID_IG_VIDEO_INVIEW10": "2018-09-11"
+        }
+    },
+    "fb_fully_measurable_cutoff": {
+      "general": "2017-06-17",
+      "custom": {}
+    },
+    "applenews": {
+      "general": false,
+      "custom": {
+        "APPLENEWS1_FULLYONSCREEN1SEC": "2017-11-01",
+        "APPLENEWS_DFP1_FULLYONSCREEN1SEC": "2017-11-01"
+      }
+    },
+    "strong_interaction_metrics": {
+      "general": "2017-07-29",
+      "custom": {
+        "VID_SNAPCHAT_VIDEO_1": "2017-05-01"
+      }
+    },
+    "givt_rate": {
+      "general": "2016-03-09",
+      "custom": {}
+    },
+    "sivt_rate": {
+      "general": "2016-03-09",
+      "custom": {}
+    },
+    "incentivized_impressions": {
+      "general": "2018-02-01",
+      "custom": {}
+    },
+    "session_hijacking": {
+      "general": "2017-12-15",
+      "custom": {}
+    },
+    "susp_inapp_sivt": {
+      "general": "2018-03-20",
+      "custom": {}
+    },
+    "inapp_sivt": {
+      "general": "2018-05-08",
+      "custom": {}
+    }
+  }
+}

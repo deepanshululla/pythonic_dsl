@@ -1,0 +1,1576 @@
+l_full_visibility_measurable:
+  require:
+    columns: [l_full_visibility_measurable]
+  definition: |
+    return db.l_full_visibility_measurable()
+
+
+passthrough_imps:
+  require:
+    columns_since:
+      groupm_mrc2: [passthrough_imps]
+  definition: |
+    return db.passthrough_imps.since('groupm_mrc2')
+
+passthrough_rate:
+  require:
+    metrics: [passthrough_imps]
+    columns_since:
+      groupm_mrc2: [l_full_visibility_measurable]
+
+  definition: |
+    return percent(passthrough_imps, db.l_full_visibility_measurable.since('groupm_mrc2'))
+
+active_exposure_time:
+  require:
+    columns: [ms_px_or_strict_js_in_viewsum]
+  definition: |
+    return db.ms_px_or_strict_js_in_viewsum()
+
+active_exposure_time_hr:
+  require:
+    columns: [ms_px_or_strict_js_in_viewsum]
+  definition: |
+    return db.ms_px_or_strict_js_in_viewsum() / 60 / 60
+
+active_in_view_percent:
+  require:
+    columns: [px_or_strict_js_ots, l]
+  definition: |
+    return percent(db.px_or_strict_js_ots(), db.l())
+
+active_time:
+  definition: |
+    return 5055650413
+
+active_time_impression_count:
+  require:
+    columns: [active_time_impression_count]
+  definition: |
+    return db.active_time_impression_count()
+
+ad_not_found_timeout:
+  require:
+    columns: [ad_not_found_timeout]
+  definition: |
+    return db.ad_not_found_timeout()
+
+adtagsfound:
+  require:
+    columns: [adtagsfound]
+  definition: |
+    return db.adtagsfound()
+
+btf_absolute_l:
+  require:
+    columns: [btf_absolute_l]
+  definition: |
+    return db.btf_absolute_l()
+
+clicks:
+  definition: |
+    return 331
+
+c1_git:
+  require:
+    columns: [c1_git]
+  definition: |
+    return db.c1_git()
+
+c1_unfiltered:
+  require:
+    columns: [c1_unfiltered]
+  definition: |
+    return db.c1_unfiltered()
+
+custom_inview:
+  require:
+    columns: [custom_inview]
+  definition: |
+    return -6
+
+custom_measurable:
+  require:
+    columns: [custom_measurable]
+  definition: |
+    # return db.custom_measurable()
+    return -6
+
+dentsu_display_ots:
+  require:
+    columns: [dentsu_display_ots]
+  definition: |
+    return db.dentsu_display_ots()
+
+exceptions:
+  definition: |
+    return 0
+
+fifty_pct_onscreen_imps:
+  require:
+    columns: [fifty_pct_onscreen_imps]
+  definition: |
+    return 738899
+
+full_vis_2_sec_continuous_inview:
+  require:
+    columns: [full_vis_2_sec_continuous_inview]
+  definition: |
+    return db.full_vis_2_sec_continuous_inview()
+    # return 421517
+
+5_sec_in_view:
+  definition: |
+    return 1193798
+
+groupm_display_imps:
+  require:
+    columns_since:
+      groupm_mrc2: [groupm_display_imps]
+  definition: |
+    return db.groupm_display_imps.since('groupm_mrc2')
+
+hovers:
+  definition: |
+    return 63678
+
+human_and_viewable:
+  definition: |
+    return 670747
+
+ia_loaded:
+  require:
+    columns: [ia_loaded]
+  definition: |
+    return db.ia_loaded()
+
+ia_measurable:
+  require:
+    columns: [ia_measurable]
+  definition: |
+    return db.ia_measurable()
+
+impressions:
+  require:
+    columns: [impressions]
+  definition: |
+    return db.impressions()
+
+in_vp:
+  require:
+    columns: [in_vp]
+  definition: |
+    return db.in_vp()
+
+in_vp_meas:
+  require:
+    columns: [in_vp_meas]
+  definition: |
+    return db.in_vp_meas()
+
+interaction_rate_4:
+  definition: |
+    return 20583
+
+interaction_rate_4_time_raw:
+  definition: |
+    return 109190960
+
+iva:
+  require:
+    columns: [iva]
+  definition: |
+    return db.iva()
+
+ivb:
+  require:
+    columns: [ivb]
+  definition: |
+    return db.ivb()
+
+ivc:
+  require:
+    columns: [ivc]
+  definition: |
+    return db.ivc()
+
+ivd:
+  require:
+    columns: [ivd]
+  definition: |
+    return db.ivd()
+
+ive:
+  require:
+    columns: [ive]
+  definition: |
+    return db.ive()
+    # return 45199
+
+loads:
+  require:
+    columns: [l]
+  definition: |
+    return db.l()
+    return 1245160
+
+l_20170210_future:
+  definition: |
+    return 1245160
+
+loads_above_fold:
+  require:
+    columns: [l_above_fold]
+  definition: |
+    return db.l_above_fold()
+
+l_birds_eye:
+  definition: |
+    return 1229233
+
+l_birds_eye_debug:
+  definition: |
+    return 949368
+
+l_birds_eye_debug_2_28_future:
+  definition: |
+    return 949368
+
+l_full_visibility_measurable:
+  require:
+    columns: [l_full_visibility_measurable]
+  definition: |
+    return db.l_full_visibility_measurable()
+
+l_full_visibility_ots:
+  require:
+    columns: [l_full_visibility_ots]
+  definition: |
+    return db.l_full_visibility_ots()
+
+l_full_visibility_ots_1_sec:
+  require:
+    columns: [l_full_visibility_ots_1_sec]
+  definition: |
+    return db.l_full_visibility_ots_1_sec()
+
+l_mobile:
+  require:
+    columns: [l_mobile]
+  definition: |
+    return db.l_mobile()
+    # return 624743
+
+l_mobile_not_iframe:
+  require:
+    columns: [l_mobile_not_iframe]
+  definition: |
+    return db.l_mobile_not_iframe()
+
+swf_img_loads:
+  # require:
+  #   columns: [swf_img_loads]
+  definition: |
+    return 300270
+
+l_px:
+  require:
+    columns: [l_px]
+  definition: |
+    return db.l_px()
+
+l_somehow_measurable:
+  require:
+    columns: [l_somehow_measurable]
+  definition: |
+    return db.l_somehow_measurable()
+
+l_somehow_measurable_20170210_future:
+  definition: |
+    return 1229233
+
+l_somehow_measurable_7_12_future:
+  definition: |
+    return 1229233
+
+l_somehow_measurable_git:
+  require:
+    columns: [l_somehow_measurable_git]
+  definition: |
+    return db.l_somehow_measurable_git()
+
+l_somehow_measurable_unfiltered:
+  require:
+    columns: [l_somehow_measurable_unfiltered]
+  definition: |
+    return db.l_somehow_measurable_unfiltered()
+
+l_time:
+  require:
+    columns: [l_time]
+  definition: |
+    return db.l_time()
+
+loads_git:
+  require:
+    columns: [loads_git]
+  definition: |
+    return db.loads_git()
+
+loads_unfiltered:
+  require:
+    columns: [loads_unfiltered]
+  definition: |
+    return db.loads_unfiltered()
+
+session_time_sum:
+  definition: |
+    return 101615420215
+
+ms_px_or_lax_js_in_viewsum:
+  require:
+    columns: [ms_px_or_lax_js_in_viewsum]
+  definition: |
+    return db.ms_px_or_lax_js_in_viewsum()
+
+ms_px_or_strict_js_in_viewsum:
+  require:
+    columns: [ms_px_or_strict_js_in_viewsum]
+  definition: |
+    return db.ms_px_or_strict_js_in_viewsum()
+
+sum_of_dwell_times:
+  definition: |
+    return 55430924543
+
+sum_of_in_view_times:
+  definition: |
+    return 16822144515
+
+reaction_time_total:
+  definition: |
+    return 3179096574
+
+mstoscrollcount:
+  definition: |
+    return 779396
+
+sum_of_times_to_scroll:
+  definition: |
+    return 19724884437
+
+on_screen_1_continuous_second_imps:
+  require:
+    columns: [on_screen_1_continuous_second_imps]
+  definition: |
+    return db.on_screen_1_continuous_second_imps()
+
+ots:
+  require:
+    columns: [ots]
+  definition: |
+    return db.ots()
+
+viewable_loads:
+  definition: |
+    return 670747
+
+page_ever_focused:
+  require:
+    columns: [page_ever_focused]
+  definition: |
+    return db.page_ever_focused()
+
+passthrough_imps:
+  require:
+    columns_since:
+      groupm_mrc2: [passthrough_imps]
+  definition: |
+    return db.passthrough_imps.since('groupm_mrc2')
+
+pixels_received:
+  require:
+    columns: [pixels_received]
+  definition: |
+    return db.pixels_received()
+
+px_or_lax_js_ots:
+  require:
+    columns: [px_or_lax_js_ots]
+  definition: |
+    return db.px_or_lax_js_ots()
+
+px_or_strict_js_ots:
+  require:
+    columns: [px_or_strict_js_ots]
+  definition: |
+    return db.px_or_strict_js_ots()
+
+px_or_strict_js_ots_git:
+  require:
+    columns: [px_or_strict_js_ots_git]
+  definition: |
+    return db.px_or_strict_js_ots_git()
+
+px_or_strict_js_ots_unfiltered:
+  require:
+    columns: [px_or_strict_js_ots_unfiltered]
+  definition: |
+    return db.px_or_strict_js_ots_unfiltered()
+
+px_ots:
+  require:
+    columns: [px_ots]
+  definition: |
+    return db.px_ots()
+
+pxbe_any_ots:
+  require:
+    columns: [pxbe_any_ots]
+  definition: |
+    return db.pxbe_any_ots()
+
+pxbe_l:
+  require:
+    columns: [pxbe_l]
+  definition: |
+    return db.pxbe_l()
+
+pxbe_lax_ots:
+  require:
+    columns: [pxbe_lax_ots]
+  definition: |
+    return db.pxbe_lax_ots()
+
+pxbe_ms_lax_in_view_sum:
+  require:
+    columns: [pxbe_ms_lax_in_view_sum]
+  definition: |
+    return db.pxbe_ms_lax_in_view_sum()
+
+pxbe_ms_px_in_view_sum:
+  require:
+    columns: [pxbe_ms_px_in_view_sum]
+  definition: |
+    return db.pxbe_ms_px_in_view_sum()
+
+pxbe_px_ots:
+  require:
+    columns: [pxbe_px_ots]
+  definition: |
+    return db.pxbe_px_ots()
+
+real_estate_measurable:
+  require:
+    columns: [real_estate_measurable]
+  definition: |
+    return db.real_estate_measurable()
+
+s1:
+  require:
+    columns: [s1]
+  definition: |
+    return db.s1()
+
+session_hijacked_imps:
+  require:
+    columns: [session_hijacked_imps]
+  definition: |
+    return db.session_hijacked_imps()
+
+sos_denom:
+  definition: |
+    return 596176
+
+sos_num:
+  definition: |
+    return 0
+
+susp_ad_invisible:
+  definition: |
+    return 57
+
+susp_ad_onebyone:
+  definition: |
+    return 161
+
+susp_ad_stuffed:
+  definition: |
+    return 282
+
+susp_bad_domain:
+  require:
+    columns: [susp_bad_domain]
+  definition: |
+    return db.susp_bad_domain()
+
+susp_bot_browser:
+  require:
+    columns: [susp_bot_browser]
+  definition: |
+    return db.susp_bot_browser()
+
+susp_bot_data_center:
+  require:
+    columns: [susp_bot_data_center]
+  definition: |
+    return db.susp_bot_data_center()
+
+susp_bot_geo:
+  require:
+    columns: [susp_bot_geo]
+  definition: |
+    return db.susp_bot_geo()
+
+susp_bot_numerator:
+  # Intermediate metric. Do not define.
+  definition: |
+    return 28317
+
+susp_bot_proxy:
+  require:
+    columns: [susp_bot_proxy]
+  definition: |
+    return db.susp_bot_proxy()
+
+susp_bot_spider:
+  require:
+    columns: [susp_bot_spider]
+  definition: |
+    return db.susp_bot_spider()
+
+susp_bot_susp_browser:
+  require:
+    columns: [susp_bot_susp_browser]
+  definition: |
+    return db.susp_bot_susp_browser()
+
+susp_bot_viewable:
+  require:
+    columns: [susp_bot_viewable]
+  definition: |
+    return db.susp_bot_viewable()
+
+susp_bot_viewable_gm:
+  require:
+    columns: [susp_bot_viewable_gm]
+  definition: |
+    return db.susp_bot_viewable_gm()
+
+susp_hidden_ad:
+  require:
+    columns: [susp_hidden_ad]
+  definition: |
+    return db.susp_hidden_ad()
+
+susp_inapp_sivt:
+  require:
+    columns: [susp_inapp_sivt]
+  definition: |
+    return db.susp_inapp_sivt()
+
+susp_l:
+  require:
+    columns: [susp_l]
+  definition: |
+    return db.susp_l()
+
+susp_l_inview_measurable:
+  require:
+    columns: [susp_l_inview_measurable]
+  definition: |
+    return db.susp_l_inview_measurable()
+
+susp_l_inview_measurable_gm:
+  require:
+    columns: [susp_l_inview_measurable_gm]
+  definition: |
+    return db.susp_l_inview_measurable_gm()
+
+susp_late_night:
+  require:
+    columns: [susp_late_night]
+  definition: |
+    return db.susp_late_night()
+
+susp_ms_abf:
+  require:
+    columns: [susp_ms_abf]
+  definition: |
+    return db.susp_ms_abf()
+
+susp_old_browser:
+  require:
+    columns: [susp_old_browser]
+  definition: |
+    return db.susp_old_browser()
+
+susp_top_hour:
+  require:
+    columns: [susp_top_hour]
+  definition: |
+    return db.susp_top_hour()
+
+click_throughs:
+  definition: |
+    return 280
+
+throttling_imps:
+  require:
+    columns: [throttling_imps]
+  definition: |
+    return db.throttling_imps()
+
+time_to_touch_sum:
+  definition: |
+    return 636492720
+
+total_fully_on_screen_time:
+  require:
+    columns: [total_fully_on_screen_time]
+  definition: |
+    return db.total_fully_on_screen_time()
+
+total_on_screen_time:
+  require:
+    columns: [total_on_screen_time]
+  definition: |
+    return db.total_on_screen_time()
+
+l_perc:
+  definition: |
+    return 100.00
+
+grapeshot_measurable_percent:
+  definition: |
+    return 99.98056474669922
+
+grapeshot_safe_percent:
+  definition: |
+    return 100
+
+grapeshot_adult_percent:
+  definition: |
+    return 0
+
+grapeshot_unsafe_percent:
+  definition: |
+    return 0
+
+grapeshot_arms_percent:
+  definition: |
+    return 0
+
+grapeshot_crime_percent:
+  definition: |
+    return 0
+
+grapeshot_death_injury_percent:
+  definition: |
+    return 0
+
+grapeshot_illegal_downloads_percent:
+  definition: |
+    return 0
+
+grapeshot_drugs_percent:
+  definition: |
+    return 0
+
+grapeshot_hate_speech_percent:
+  definition: |
+    return 0
+
+grapeshot_military_percent:
+  definition: |
+    return 0
+
+grapeshot_obscenity_percent:
+  definition: |
+    return 0
+
+grapeshot_terrorism_percent:
+  definition: |
+    return 0
+
+grapeshot_tobacco_percent:
+  definition: |
+    return 0
+
+dfp_ad_server_impressions:
+  definition: |
+    return 1359775
+
+moat_over_dfp_impression_perc:
+  definition: |
+    return 91.57103197220128
+
+active_view_viewable_impressions:
+  definition: |
+    return 573204
+
+active_view_not_viewable_impressions:
+  definition: |
+    return 744660
+
+active_view_measurable_impressions:
+  definition: |
+    return 1317859
+
+active_view_not_measurable_impressions:
+  definition: |
+    return 41916
+
+active_view_eligible_impressions:
+  definition: |
+    return 1359775
+
+dfp_ad_server_clicks:
+  definition: |
+    return 0
+
+third_party_ad_server_cpm_and_cpc_revenue:
+  definition: |
+    return 0
+
+active_view_viewable_impressions_rate:
+  definition: |
+    return 43.49509317764647
+
+active_view_measurable_impressions_rate:
+  definition: |
+    return 96.91743119266054
+
+dfp_ad_server_click_through_rate:
+  definition: |
+    return 0
+
+active_time_avg:
+  definition: |
+    return 9268.99057636354
+
+page_dwell_time:
+  definition: |
+    return 58387.184466929575
+
+in_view_time:
+  definition: |
+    return 24244.117393152846
+
+time_to_scroll:
+  definition: |
+    return 25307.91078861067
+
+reaction_time:
+  definition: |
+    return 49924.56694619806
+
+interaction_rate_4_time:
+  definition: |
+    return 5304.90987708303
+
+session_time:
+  definition: |
+    return 81608.323600983
+
+l_not_birds_eye_debug:
+  definition: |
+    return 295792
+
+time_to_touch:
+  definition: |
+    return 47200.05339265851
+
+total_exposure_time:
+  definition: |
+    return 16261669009.105093
+
+active_exposure_time:
+  definition: |
+    return 13216074574
+
+active_exposure_time_hr:
+  definition: |
+    return 3671131.8261111113
+
+total_ad_dwell_time:
+  definition: |
+    return 109190960
+
+click_measurable_perc:
+  definition: |
+    return 24.114973176138005
+
+average_in_view_time:
+  definition: |
+    return 24244.117393152846
+
+average_minute_audience:
+  definition: |
+    return 152.96382608796296
+
+active_in_view_time:
+  definition: |
+    return 19703.516488333156
+
+in_view_median:
+  definition: |
+    return 12620.709615450258
+
+percent_loads_above_fold:
+  definition: |
+    return 29.793681133348326
+
+percent_publisher_iframe:
+  definition: |
+    return 98.72088727553086
+
+hovers_percent:
+  definition: |
+    return 10.263741967096324
+
+click_through_percent:
+  definition: |
+    return 0.022487069934787496
+
+clicks_percent:
+  definition: |
+    return 0.11023412262297266
+
+in_view_percent:
+  definition: |
+    return 54.566302726985036
+
+percent_exceptions:
+  definition: |
+    return 0
+
+time_to_scroll_percent:
+  definition: |
+    return 82.09629985421881
+
+susp_incentivized_perc:
+  definition: |
+    return 0
+
+active_in_view_percent:
+  definition: |
+    return 54.566302726985036
+
+percent_in_iframe:
+  definition: |
+    return 75.88502682386199
+
+ad_finding_perc:
+  definition: |
+    return 51.34095647087139
+
+in_view_measurable_percent:
+  definition: |
+    return 98.72088727553086
+
+non_in_view_measurable_percent:
+  definition: |
+    return 1.2791127244691438
+
+non_measurable_impressions:
+  definition: |
+    return 15927
+
+non_viewable_impressions:
+  definition: |
+    return 558486
+
+non_in_view_percent:
+  definition: |
+    return 45.433697273014964
+
+l_full_visibility_ots_percent:
+  definition: |
+    return 51.48625199616346
+
+l_full_visibility_ots_1_sec_percent:
+  definition: |
+    return 42.574271924037184
+
+interaction_rate_4_percent:
+  definition: |
+    return 3.3176073511847677
+
+impressions_percentage:
+  definition: |
+    return 0
+
+attention_quality:
+  definition: |
+    return 32.32356543861302
+
+pxbe_both_ots_perc:
+  definition: |
+    return 0
+
+pxbe_px_ots_perc:
+  definition: |
+    return 0.5464874915657562
+
+pxbe_lax_ots_perc:
+  definition: |
+    return 100
+
+measurable_by_px_perc:
+  definition: |
+    return 22.767449295617673
+
+measurable_by_js_perc:
+  definition: |
+    return 67.68806239337863
+
+measurable_by_both_perc:
+  definition: |
+    return 9.544488311003692
+
+l_birds_eye_debug_perc:
+  definition: |
+    return 76.24465932089049
+
+l_not_birds_eye_debug_perc:
+  definition: |
+    return 23.755340679109512
+
+5_sec_in_view_perc:
+  definition: |
+    return 97.11730811001657
+
+sos_perc:
+  definition: |
+    return 0
+
+sos_num_debug:
+  definition: |
+    return 0
+
+s1_perc:
+  definition: |
+    return 11.225339215849496
+
+focused_in_view_percent:
+  definition: |
+    return 54.566302726985036
+
+iva_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [iva, l_somehow_measurable]
+  definition: |
+    return percent(db.iva.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+ivb_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ivb, l_somehow_measurable]
+  definition: |
+    return percent(db.ivb.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+ivc_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ivc, l_somehow_measurable]
+  definition: |
+    return percent(db.ivc.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+ivd_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ivd, l_somehow_measurable]
+  definition: |
+    return percent(db.ivd.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+ive_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ive, l_somehow_measurable]
+  definition: |
+    return percent(db.ive.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+in_view_time_1s_5s_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [px_or_strict_js_ots, iva, l_somehow_measurable]
+  definition: |
+    return percent(db.px_or_strict_js_ots.since('in_view_time_buckets') - db.iva.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+in_view_time_5s_10s_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [iva, ivb, l_somehow_measurable]
+  definition: |
+    return percent(db.iva.since('in_view_time_buckets') - db.ivb.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+in_view_time_10s_15s_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ivb, ivc, l_somehow_measurable]
+  definition: |
+    return percent(db.ivb.since('in_view_time_buckets') - db.ivc.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+
+in_view_time_15s_30s_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ivc, ivd, l_somehow_measurable]
+  definition: |
+    return percent(db.ivc.since('in_view_time_buckets') - db.ivd.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+  definition: |
+    return 16.730107310819022
+
+in_view_time_30s_1m_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ivd, ive, l_somehow_measurable]
+  definition: |
+    return percent(db.ivd.since('in_view_time_buckets') - db.ive.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+  definition: |
+    return 2.856578045008554
+
+in_view_time_gt_1m_percent:
+  require:
+    columns_since:
+      in_view_time_buckets: [ive, l_somehow_measurable]
+  definition: |
+    return percent(db.ive.since('in_view_time_buckets'), db.l_somehow_measurable.since('in_view_time_buckets'))
+  definition: |
+    return 3.6770083458546914
+
+ia_measurable_perc:
+  require:
+    columns_since:
+      mrc_in_app_metrics: [ia_measurable, l]
+  definition: |
+    return percent(db.ia_measurable.since('mrc_in_app_metrics'), db.l.since('mrc_in_app_metrics'))
+
+ia_loaded_perc:
+  require:
+    columns_since:
+      mrc_in_app_metrics: [ia_loaded, ia_measurable]
+  definition: |
+    return percent(db.ia_loaded.since('mrc_in_app_metrics'), db.ia_measurable.since('mrc_in_app_metrics'))
+
+in_view_unfiltered_percent:
+  require:
+    columns: [px_or_strict_js_ots_unfiltered, l_somehow_measurable_unfiltered]
+  definition: |
+    return percent(db.px_or_strict_js_ots_unfiltered(), db.l_somehow_measurable_unfiltered())
+
+in_view_git_percent:
+  require:
+    columns: [px_or_strict_js_ots_git, l_somehow_measurable_git]
+  definition: |
+    return percent(db.px_or_strict_js_ots_git(), db.l_somehow_measurable_git())
+
+in_view_measurable_unfiltered_percent:
+  require:
+    columns: [l_somehow_measurable_unfiltered, loads_unfiltered]
+  definition: |
+    return percent(db.l_somehow_measurable_unfiltered(), db.loads_unfiltered())
+
+in_view_measurable_git_percent:
+  require:
+    columns: [l_somehow_measurable_git, loads_git]
+  definition: |
+    return percent(db.l_somehow_measurable_git(), db.loads_git())
+
+clicks_unfiltered_percent:
+  require:
+    columns: [c1_unfiltered, l_not_iframe_unfiltered]
+  definition: |
+    return percent(db.c1_unfiltered(), db.l_not_iframe_unfiltered())
+
+clicks_git_percent:
+  require:
+    columns: [c1_git, l_not_iframe_git]
+  definition: |
+    return percent(db.c1_git(), db.l_not_iframe_git())
+
+passthrough_rate:
+  require:
+    columns_since:
+      groupm_mrc2: [passthrough_imps, l_full_visibility_measurable]
+  definition: |
+    return percent(db.passthrough_imps.since('groupm_mrc2'), db.l_full_visibility_measurable.since('groupm_mrc2'))
+
+groupm_display_perc:
+  require:
+    columns_since:
+      groupm_mrc2: [l_full_visibility_measurable, groupm_display_imps]
+  definition: |
+    return percent(db.groupm_display_imps.since('groupm_mrc2'), db.l_full_visibility_measurable.since('groupm_mrc2'))
+
+session_hijacked_perc:
+  require:
+    columns_since:
+      groupm_mrc2: [session_hijacked_imps, loads_unfiltered]
+  definition: |
+    return percent(db.session_hijacked_imps.since('groupm_mrc2'), db.loads_unfiltered.since('groupm_mrc2'))
+
+focus_gap:
+  require:
+    columns: [px_or_lax_js_ots, px_or_strict_js_ots, l_somehow_measurable]
+  definition: |
+    return percent(db.px_or_lax_js_ots() - db.px_or_strict_js_ots(), db.l_somehow_measurable())
+
+opportunity_cost:
+  require:
+    metrics: [ivd]
+    columns: [l_somehow_measurable]
+  definition: |
+    return percent(ivd, db.l_somehow_measurable())
+
+opportunity_cost_b:
+  require:
+    columns: [ivd, px_or_strict_js_ots, l_somehow_measurable]
+  definition: |
+    return percent(db.ivd() + db.px_or_strict_js_ots(),
+                   db.ivd() + db.l_somehow_measurable()) - percent(db.px_or_strict_js_ots(), db.l_somehow_measurable())
+
+slow_starter_percent:
+  require:
+    columns: [l_time, l]
+  definition: |
+    return percent(db.l_time(), db.l())
+
+# loaded_btf_fixed_count:
+#   require:
+#     metrics: [l_birds_eye_debug_perc]
+#     columns_since:
+#       viewability_diagnostics: [btf_absolute_l]
+#   definition: |
+#     $isVdmUnderThreshold = !$scrollingMeasurable || (
+#         $scrollingMeasurable && (
+#           (isset($stats[$lbed]) && $scrollingMeasurable < 85 && $stats[$lbed] < 1000000) ||
+#           (isset($stats[$lbed]) && $scrollingMeasurable < 20 && $stats[$lbed] >= 1000000)
+#         ) || isset($stats[$lbed]) && $stats[$lbed] < 1000
+#     );
+#     return db.btf_absolute_l.since('viewability_diagnostics')
+
+# loaded_btf_fixed_percent:
+#   require:
+#     columns_since:
+#       viewability_diagnostics: [btf_absolute]
+#   definition: |
+#     denominator = db.l_birds_eyes.since('
+#     return percent(db.btf_absolute_ots.since('viewability_diagnostics'),
+#     return -1
+
+gold_below_the_fold_count:
+  definition: |
+    return -1
+
+gold_below_the_fold_percent:
+  definition: |
+    return -1
+
+fully_on_screen_time_avg:
+  definition: |
+    return 6533.842845091207
+
+on_screen_time_avg:
+  definition: |
+    return 0
+
+on_screen_1_continuous_second_perc:
+  definition: |
+    return 0
+
+never_focused_count:
+  definition: |
+    return 50314
+
+never_visible_count:
+  definition: |
+    return 401633
+
+never_50_per_visible_count:
+  definition: |
+    return 38387
+
+never_1_sec_visible_count:
+  definition: |
+    return 68152
+
+never_focused_percent:
+  definition: |
+    return 4.09
+
+never_visible_percent:
+  definition: |
+    return 32.67
+
+never_50_perc_visible_percent:
+  definition: |
+    return 3.12
+
+never_1_sec_visible_percent:
+  definition: |
+    return 5.54
+
+full_vis_2_sec_continuous_inview_percent:
+  definition: |
+    return 34.291057919857344
+
+mm_history_avg:
+  definition: |
+    return 7.269599890777089
+
+mm_no_referrer_perc:
+  definition: |
+    return 12.012938149236149
+
+mm_hostile_iframe_perc:
+  definition: |
+    return 23.755340679109512
+
+susp_bot_browser_perc:
+  definition: |
+    return 0.30224338562848013
+
+susp_bot_data_center_perc:
+  definition: |
+    return 1.189499299948095
+
+susp_bot_geo_perc:
+  definition: |
+    return 0.6311853296133342
+
+susp_bot_proxy_perc:
+  definition: |
+    return 0.342683849021223
+
+susp_bot_susp_browser_perc:
+  definition: |
+    return 0.4639267140278152
+
+susp_late_night_perc:
+  definition: |
+    return 22.348499423232614
+
+susp_old_browser_perc:
+  definition: |
+    return 6.276359918553692
+
+susp_top_hour_perc:
+  definition: |
+    return 22.228905586830386
+
+susp_ms_abf_perc:
+  definition: |
+    return 0.09572218422476417
+
+susp_bad_domain_perc:
+  require:
+    columns_since:
+      ivt_bad_domain: [susp_bad_domain, loads_unfiltered]
+  definition: |
+    return percent(db.susp_bad_domain.since('ivt_bad_domain'), db.loads_unfiltered.since('ivt_bad_domain'))
+
+susp_l_measurable_perc:
+  definition: |
+    return 100
+
+susp_bot_spider_perc:
+  definition: |
+    return 0.009030394738185298
+
+susp_bot_perc:
+  definition: |
+    return 2.223597285227766
+
+susp_human_perc:
+  definition: |
+    return 97.77640271477223
+
+susp_human:
+  require:
+    columns_since:
+      ivt_metrics: [l, loads_unfiltered]
+    columns_until:
+      ivt_metrics: [l, susp_l]
+  definition: |
+    susp_bot_loads = db.l.until('ivt_metrics') + db.loads_unfiltered.since('ivt_metrics')
+    susp_bot_numerator = db.loads_unfiltered.since('ivt_metrics') - db.l.since('ivt_metrics')
+    susp_bot_denominator = db.loads_unfiltered.since('ivt_metrics') + db.susp_l.until('ivt_metrics')
+    return susp_bot_loads * (susp_bot_denominator - susp_bot_numerator) / susp_bot_denominator
+
+susp_human_and_inview_meas_sum:
+  definition: |
+    return 1229233
+
+susp_human_and_inview_meas_perc:
+  definition: |
+    return 98.72088727553086
+
+susp_human_and_inview_gm_meas_sum:
+  definition: |
+    return 1229233
+
+susp_human_and_inview_gm_meas_perc:
+  definition: |
+    return 98.72088727553086
+
+human_and_fos_or_large_sum:
+  definition: |
+    return 642214
+
+human_and_fos_or_large_perc:
+  definition: |
+    return 52.2450991797324
+
+human_and_groupm_payable_sum:
+  definition: |
+    return 650535
+
+human_and_viewable_gm:
+  definition: |
+    return 632886
+
+human_and_viewable_gm_perc:
+  definition: |
+    return 51.48625199616346
+
+human_and_viewable_perc:
+  definition: |
+    return 54.566302726985036
+
+in_vp_perc:
+  definition: |
+    return 63.23341465775813
+
+dentsu_display_ots_perc:
+  definition: |
+    return 48.16491259183572
+
+human_and_dentsu_display_ots:
+  definition: |
+    return 592059
+
+human_and_dentsu_display_ots_perc:
+  definition: |
+    return 48.16491259183572
+
+l_audible_measurable_20170210_future:
+  definition: |
+    return 0
+
+fifty_pct_onscreen_perc:
+  definition: |
+    return 60.11057301585623
+
+avg_fifty_pct_onscreen_time:
+  definition: |
+    return 10783.498606041328
+
+total_onscreen_time:
+  definition: |
+    return 13255432342
+
+avg_real_estate_perc:
+  definition: |
+    return 12.444198130053456
+
+avg_real_estate_time:
+  definition: |
+    return 0
+
+real_estate_measurable_perc:
+  definition: |
+    return 98.72088727553086
+
+throttling_pct:
+  definition: |
+    return 3.421263203026046
+
+throttling_base:
+  definition: |
+    return 43.569
+
+avg_pixels_received:
+  definition: |
+    return 0.30070350701269044
+
+efficiency_score:
+  definition: |
+    return 29
+
+margin_of_error_90:
+  definition: |
+    return 0.39250735097679856
+
+margin_of_error_95:
+  definition: |
+    return 0.4676683330787388
+
+margin_of_error_99:
+  definition: |
+    return 0.6146498091891996
+
+accuracy_rate:
+  definition: |
+    return 99.6074926490232
+
+custom_measurable_percent:
+  definition: |
+    return -6
+
+susp_inapp_sivt_rate:
+  definition: |
+    return 0
+
+ad_hidden_perc:
+  definition: |
+    return 0.022144098401463082
+
+sivt_rate:
+  definition: |
+    return 0.9587138205087332
+
+givt_rate:
+  require:
+    columns: [loads_git]
+    columns_since:
+      givt_rate: [loads_unfiltered]
+  definition: |
+    return percent(db.loads_unfiltered.since('givt_rate') - db.loads_git(), db.loads_unfiltered.since('givt_rate'))
+
+time_to_view:
+  definition: |
+    return 27315.75866906598
+
+ad_load_time:
+  definition: |
+    return 0
+
+custom_inview_percent:
+  definition: |
+    return -6
+
+interaction_rate_4_time_cumulative_distribution:
+  definition: |
+    return 0.10415689192039207
+
+interaction_rate_4_time_portion:
+  definition: |
+    return 1.562353378805881
+
+active_in_view_time_cumulative_distribution:
+  definition: |
+    return 0.0628145190172677
+
+active_in_view_time_portion:
+  definition: |
+    return 1.256290380345354
+
+in_view_percent_cumulative_distribution:
+  definition: |
+    return 0.582950366960552
+
+in_view_percent_portion:
+  definition: |
+    return 17.48851100881656
+
+interaction_rate_4_percent_cumulative_distribution:
+  definition: |
+    return 0.5023414254848618
+
+interaction_rate_4_percent_portion:
+  definition: |
+    return 12.558535637121546
+
+attention_quality_cumulative_distribution:
+  definition: |
+    return 0.7892216156127896
+
+attention_quality_portion:
+  definition: |
+    return 7.892216156127896
+
+moat_score_index:
+  definition: |
+    return 100
+
+moat_score:
+  definition: |
+    return 524
+
+s1_perc_cumulative_distribution:
+  definition: |
+    return None
+
+s1_perc_portion:
+  definition: |
+    return None
+
+valid_and_viewable:
+  definition: |
+    return 670747
+
+susp_invalid_source_imps:
+  definition: |
+    return 71
+
+susp_invalid_source_perc:
+  definition: |
+    return 0.0055752871861839675
+
+susp_valid_perc:
+  definition: |
+    return 97.77640271477223
+
+susp_valid:
+  definition: |
+    return 1245160
+
+susp_valid_and_inview_meas_sum:
+  definition: |
+    return 1229233
+
+susp_valid_and_inview_meas_perc:
+  definition: |
+    return 98.72088727553086
+
+susp_valid_and_inview_gm_meas_sum:
+  definition: |
+    return 1229233
+
+susp_valid_and_inview_gm_meas_perc:
+  definition: |
+    return 98.72088727553086
+
+valid_and_fos_or_large_sum:
+  definition: |
+    return 642214
+
+valid_and_fos_or_large_perc:
+  definition: |
+    return 52.2450991797324
+
+valid_and_groupm_payable_sum:
+  definition: |
+    return 650535
+
+valid_and_viewable_gm:
+  definition: |
+    return 632886
+
+valid_and_viewable_gm_perc:
+  definition: |
+    return 51.48625199616346
+
+valid_and_viewable_perc:
+  definition: |
+    return 54.566302726985036
+
+valid_and_dentsu_display_ots:
+  definition: |
+    return 592059
+
+valid_and_dentsu_display_ots_perc:
+  definition: |
+    return 48.16491259183572
