@@ -23,12 +23,13 @@ RUN echo "alias antlr4='java -Xmx500M -cp \"/usr/local/lib/antlr-4.7.1-complete.
 RUN "java org.antlr.v4.Tool"
 RUN "antlr4"
 
-COPY pip.conf /etc
+
 
 COPY requirements.txt /
 RUN pip install -r requirements.txt
 COPY test-requirements.txt /
 RUN pip install -r test-requirements.txt
 
+RUN mkdir -p /pythonic_dsl
 
-COPY . .
+COPY . /pythonic_dsl/
