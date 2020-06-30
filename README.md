@@ -1,6 +1,6 @@
 # Pythonic DSL
 
-This is a python interpreter written in python using Antlr4.python
+This is a python interpreter written in python using Antlr4.
 
 The interpreter is pretty basic and only understands a few commands such as if-else conditions, print statements,
 and evaluation Reverse polish notations.
