@@ -1,4 +1,4 @@
-grammar Moatlang;
+grammar PythonicDsl;
 
 program: statement+ EOF ;
 

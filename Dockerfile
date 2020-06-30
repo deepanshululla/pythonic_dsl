@@ -31,4 +31,4 @@ COPY test-requirements.txt /
 RUN pip install -r test-requirements.txt
 
 
-COPY . /moatlang_pythonic
+COPY . .

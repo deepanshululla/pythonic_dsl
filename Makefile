@@ -1,4 +1,4 @@
-NAME := moatlang_pythonic
+NAME := pythonic_dsl
 TAG := $(shell git log -1 --pretty=%h)
 IMG := ${NAME}:${TAG}
 LATEST := ${NAME}:latest
@@ -14,14 +14,8 @@ venv/bin/python:
 	python -m virtualenv -p python3.7 --prompt "(metrics) " venv
 
 antlr_build:
-	$(antlr4) -Dlanguage=Python3 -visitor ./grammar/Moatlang.g4 -Werror -no-listener
+	$(antlr4) -Dlanguage=Python3 -visitor ./grammar/PythonicDsl.g4 -Werror -no-listener
 
 docker_build:
 	docker build -t ${IMG} .
 	docker tag ${IMG} ${LATEST}
-
-test: docker_build
-	docker run --rm ${IMG} pytest -vrs -vv --ff moatlang_pythonic/tests
-
-lint: docker_build
-	docker run --rm ${IMG} pylint -E moatlang_pythonic
