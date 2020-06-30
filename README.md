@@ -2,7 +2,7 @@
 
 This is a python interpreter written in python using Antlr4.
 
-The interpreter is pretty basic and only understands a few commands such as if-else conditions, print statements,
+The interpreter is pretty basic and only understands a few commands such as comments, if-else conditions, print statements,
 and evaluation Reverse polish notations.
 
 
